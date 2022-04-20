@@ -20,13 +20,44 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
   color: white;
 }
 
 .App-link {
   color: #61dafb;
 }
+
+p {
+  color: azure;
+}
+
+h1 {
+  color: indianred;
+}
+
+#customers {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  
+}
+
+#customers td, #customers th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+
+
+#customers tr:hover {background-color: rgba(221, 221, 221, 0.226);}
+
+#customers th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+
+  color: indianred;
+}
+
+
 
 @keyframes App-logo-spin {
   from {
