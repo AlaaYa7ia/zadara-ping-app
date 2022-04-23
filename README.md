@@ -21,3 +21,7 @@ In the brawser:
 
 7-localhost:3000
 
+# # deployoment:
+
+https://zadara-ping-app.herokuapp.com/
+
