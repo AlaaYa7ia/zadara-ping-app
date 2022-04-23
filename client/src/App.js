@@ -22,10 +22,31 @@ function App() {
       .then((res) => res.json())
       .then((data) => {setData(data);
         setGetTable();
-      }
+        console.log(data);}
       )
       setTimeout(() => {setGetTable(true)}, 10000);
   }, [getTable]);
+
+
+  // useEffect(() => {
+
+  //   fetch("/ping", {
+  //     method: 'POST', // or 'PUT'
+  //     headers: {
+  //       'Content-Type': 'application/json',
+  //     },
+  //     body: JSON.stringify({url: url, packeges: packeges}),
+  //   })
+  //    .then((response) => response.json())
+  //   .then((data) => {
+  //     console.log('Success:', data);
+  //     setPingResponse(data.pingRes);
+  //     setPingErrResponse(data.pingErr);
+  //   })
+  //   .catch((error) => {
+  //     console.error('Error:', error);
+  //   });
+  // }, [url, packeges]);
 
   
   const handleHost = e => {
@@ -121,7 +142,7 @@ function App() {
                 </Button>
             </Form.Item>
             <Form.Item>
-            <TextArea rows={4} placeholder='The ping result will appear here' value={pinged && !pingResponse && !pingErrResponse ? "laodign..." : pingResponse || pingErrResponse}></TextArea>
+            <TextArea rows={4} placeholder='The ping result will appear here' value={pinged && !pingResponse && !pingErrResponse ? "loading..." : pingResponse || pingErrResponse}></TextArea>
               </Form.Item>
             </Form>
             {/* {<p>{!pingResponse && !pingErrResponse ? "Loading..." : pingResponse || pingErrResponse}</p>} */}
