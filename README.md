@@ -5,7 +5,7 @@ Zadara's ping assignment - Web Application
 
 1- clone the repo.
 
-In the termenal run:
+In the terminal run:
 
 2- npm install.
 
@@ -17,11 +17,11 @@ In the termenal run:
 
 6- npm start.
 
-In the brawser: 
+In the browser: 
 
 7-localhost:3000
 
-# # deployoment:
+# # deployment:
 
 https://zadara-ping-app.herokuapp.com/
 
